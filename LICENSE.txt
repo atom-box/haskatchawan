@@ -1,0 +1,8 @@
+Just kidding; there is no license here.
+This is a homework exercise!
+Evan Genest, 2019
+twitter@mistergenest
+
+TO DO: 
+1) Once the exercise is solved, come back and set up the comments et al 
+per Chris Allen's style: https://howistart.org/posts/haskell/1/ 

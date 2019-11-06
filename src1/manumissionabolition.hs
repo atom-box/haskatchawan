@@ -1,4 +1,5 @@
-main = do  
-    putStrLn "I will find a2 + b2 = c2.  Upper limit?"  
-    max <- getLine  
-    putStrLn ("Hey " ++ max ++ ", you rock!") 
+main = do
+       putStrLn "enter value for x: "
+       input1 <- getLine
+       let x = (read input1 :: Int)
+       print (x)

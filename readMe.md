@@ -10,7 +10,7 @@ Prime number finder.<br>
 <br>
 
 ## Reflection
-So far, Haskell is no harder than Javascript.  Compared to JS, Haskell is more internally consistant with its own rules. In that respect, Haskell is like 11th grade Physics and Javascript is like 10th grade chemistry. <br><br>And compared to learning Elm language, the Haskell tutorials are less restricted to the DOM and web development so they unleash a lot of beauty.  For example, lists can have infinite length. For example, you can make a one line solution for finding all possible right triangles. For example, recursive programming is suddenly useful.
+So far, Haskell is not harder than Javascript.  One upside: compared to JS, Haskell is more internally consistant with its own rules. In that respect, Haskell is like 11th grade Physics and Javascript is like 10th grade chemistry. <br><br>And compared to learning Elm language, the Haskell tutorials are less restricted to the DOM and web development so they unleash a lot of beauty.  For example, lists can have infinite length. For example, you can make a one line solution for finding all possible right triangles. For example, recursive programming is suddenly useful.
 
 ## Resources
 1. The free, full sized book [Learn You a Haskell](http://learnyouahaskell.com/) with awesome illustrations

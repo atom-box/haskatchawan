@@ -4,9 +4,9 @@
 I am solving very short exercises in Haskell.
 
 ## Reflection
-Haskell is not harder than Javascript, it is actually much easier.  And compared to learning Elm language the Haskell tutorials are less restricted to the DOM and web development so they unleash a lot of beauty.  For example, lists can have infinite length. For example, you can make a one line solution for finding all possible right triangles. For example, recursive programming is suddenly useful.
+Haskell is not harder than Javascript, it is actually much easier.  And compared to learning Elm language, the Haskell tutorials are less restricted to the DOM and web development so they unleash a lot of beauty.  For example, lists can have infinite length. For example, you can make a one line solution for finding all possible right triangles. For example, recursive programming is suddenly useful.
 
 ## Resources
 1. [Learn You a Haskell](http://learnyouahaskell.com/) with awesome illustrations
-2. [Sandboxed Installation](https://tech.fpcomplete.com/haskell/tutorial/stack-play)
-3. [Chris Allen's Resource List](https://github.com/bitemyapp/learnhaskell)
+2. Sandboxed [Installation](https://tech.fpcomplete.com/haskell/tutorial/stack-play) using Stacker
+3. Chris Allen's [Resource List](https://github.com/bitemyapp/learnhaskell)

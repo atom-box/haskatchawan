@@ -1,7 +1,7 @@
 # Coding Challenges in Haskell
 
 ## What's going on here:
-I am solving very short exercises in Haskell:<br><br>
+I am solving very short exercises in Haskell.<br><br>
 Right triangle solver.<br>
 ![screenshot1](https://github.com/atom-box/haskatchawan/blob/master/screenshots/manumissionHS_1027x421.png)
 <br><br>

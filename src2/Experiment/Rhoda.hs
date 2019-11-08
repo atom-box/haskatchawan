@@ -2,6 +2,7 @@ module Experiment.Rhoda
 (sinister 
 , fizzer
 , withoutEnd
+, left2
 ) where
 
 
@@ -34,7 +35,12 @@ withoutEnd s = do
   init (tail s)
 
 
+-- Given a string, return a "rotated left 2" version where the first 2 chars are moved to the end. The string length will be at least 2.
 
+left2 s = do
+  let a = take 2 s
+  let b = drop 2 s
+  b ++ a
 
 
 {-

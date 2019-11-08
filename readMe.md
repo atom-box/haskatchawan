@@ -2,11 +2,16 @@
 
 ## What's going on here:
 I am solving very short exercises in Haskell.<br><br>
-Right triangle solver.<br>
-![screenshot1](https://github.com/atom-box/haskatchawan/blob/master/screenshots/manumissionHS_1027x421.png)
+src2/Experiment/Rhoda.hs code (Several algorithms in one module)<br>
+![screenshot of Rhoda Module code](https://github.com/atom-box/haskatchawan/blob/master/screenshots/rhoda-code.png)<br><br>
+Rhoda.hs running<br>
+![screenshot of Rhoda code running](https://github.com/atom-box/haskatchawan/blob/master/screenshots/rhoda-running.png)<br><br>
+
+src1/manumission.hs (Right triangle solver)<br>
+![screenshot3](https://github.com/atom-box/haskatchawan/blob/master/screenshots/manumissionHS_1027x421.png)
 <br><br>
-Prime number finder.<br>
-![screenshot1](https://github.com/atom-box/haskatchawan/blob/master/screenshots/primacyHS.png)
+src3/Main.hs (Prime number finder)<br>
+![screenshot4](https://github.com/atom-box/haskatchawan/blob/master/screenshots/primacyHS.png)
 <br>
 
 ## Reflection

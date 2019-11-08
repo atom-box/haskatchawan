@@ -2,11 +2,15 @@
 
 ## What's going on here:
 I am solving very short exercises in Haskell.<br><br>
+Several solutions in a module<br>
+![screenshot of Rhoda Module code](https://github.com/atom-box/haskatchawan/blob/master/screenshots/rhoda-code.png)<br><br>
+![screenshot of Rhoda code running](https://github.com/atom-box/haskatchawan/blob/master/screenshots/rhoda-running.png)<br><br>
+
 Right triangle solver.<br>
-![screenshot1](https://github.com/atom-box/haskatchawan/blob/master/screenshots/manumissionHS_1027x421.png)
+![screenshot3](https://github.com/atom-box/haskatchawan/blob/master/screenshots/manumissionHS_1027x421.png)
 <br><br>
 Prime number finder.<br>
-![screenshot1](https://github.com/atom-box/haskatchawan/blob/master/screenshots/primacyHS.png)
+![screenshot4](https://github.com/atom-box/haskatchawan/blob/master/screenshots/primacyHS.png)
 <br>
 
 ## Reflection

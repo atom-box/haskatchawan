@@ -16,18 +16,17 @@ sinister s = do
   take width s
 
 {-
-Implement Fizzbuzz.  This is my lame answer
-b/c I can't figure out the pattern match.
+Implement Fizzbuzz.  NOTE:
+  PIPES!
+  TYPE CONVERSION TO STRING IN LAST CASE
+  USE OF "otherwise"
 -}
-fizzer n = do
-  if (mod n 5 == 0 && mod n 3 == 0)
-    then "BizzFuzz"
-  else if (mod n 5 == 0)
-    then "Buzz"
-  else if (mod n 3 == 0)
-    then "Fizz"
-  else
-    show n
+
+fizzer n
+  | (mod n 5 == 0 && mod n 3 == 0) = "FizzBuzz"
+  | mod n 5 == 0 = "Buzz"
+  | mod n 3 == 0 = "Fizz"
+  | otherwise  = show n
 
 
 -- Given a string, return a version without the first and last char, so "Hello" yields "ell". The string length will be at least 2.
@@ -42,7 +41,13 @@ left2 s = do
   let b = drop 2 s
   b ++ a
 
+-- Return the number of times that the string "hi" appears anywhere in the given string.
+
+
 
 {-
 Implment SLICE from JS manually
 -}
+
+
+

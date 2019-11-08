@@ -1,6 +1,7 @@
 module Experiment.Rhoda 
 (sinister 
 , fizzer
+, withoutEnd
 ) where
 
 
@@ -14,7 +15,8 @@ sinister s = do
   take width s
 
 {-
-Print out all the numbers from 1 to 100. But for every number divisible by 3 print replace it with the word “Fizz,” for any number divisible by 5 replace it with the word “Buzz” and for a number divisible by both 3 and 5 replace it with the word “FizzBuzz.”
+Implement Fizzbuzz.  This is my lame answer
+b/c I can't figure out the pattern match.
 -}
 fizzer n = do
   if (mod n 5 == 0 && mod n 3 == 0)
@@ -25,6 +27,12 @@ fizzer n = do
     then "Fizz"
   else
     show n
+
+
+-- Given a string, return a version without the first and last char, so "Hello" yields "ell". The string length will be at least 2.
+withoutEnd s = do 
+  init (tail s)
+
 
 
 

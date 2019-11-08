@@ -9,9 +9,11 @@ import Experiment.Oscar
 main = do
   putStrLn(lucky 7)
   putStrLn(sayMe 3)
-  print(fibonacci 13)
-  print(fibonacci 100)
-  print(fibonacci 1)
+  print(fibonacci 2)
+  print(fibonacci 3)
+  print(fibonacci 4)
+  print(fibonacci 5)
+  print(fibonacci 6)
 
 {-
 http://learnyouahaskell.com/modules

@@ -4,6 +4,7 @@
 
 import Experiment.Felix
 import Experiment.Oscar
+import Experiment.Rhoda
 
 
 main = do
@@ -18,9 +19,10 @@ main = do
   print(bunnyEars 33)
   putStrLn "Recursive char replacement of x with y: "
   let slogan = "Excellency, Your Xerxes!"
-  putStrLn slogan
+  putStrLn slogan  
   print(x2y slogan)
-
+  print(length nouns)
+  print(sinister "PET SHOP BOYS")
 
 
 {-

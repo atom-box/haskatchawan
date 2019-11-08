@@ -4,7 +4,7 @@
 I am solving very short exercises in Haskell.  Selected screenshots from src1, src2, and src3:<br><br>
 src2/Experiment/Rhoda.hs code (Several algorithms in one module)<br>
 ![screenshot of Rhoda Module code](https://github.com/atom-box/haskatchawan/blob/master/screenshots/rhoda-code.png)<br><br>
-Rhoda.hs running<br>
+Rhoda.hs running as a module of Main.hs<br>
 ![screenshot of Rhoda code running](https://github.com/atom-box/haskatchawan/blob/master/screenshots/rhoda-running.png)<br><br>
 
 src1/manumission.hs (Right triangle solver)<br>

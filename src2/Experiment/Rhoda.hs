@@ -16,9 +16,16 @@ sinister s = do
 {-
 Print out all the numbers from 1 to 100. But for every number divisible by 3 print replace it with the word “Fizz,” for any number divisible by 5 replace it with the word “Buzz” and for a number divisible by both 3 and 5 replace it with the word “FizzBuzz.”
 -}
-fizzer n = if (mod n 5 == 0 && mod n 3 == 0)
-  then "BizzFuzz"
-  else show n
+fizzer n = do
+  if (mod n 5 == 0 && mod n 3 == 0)
+    then "BizzFuzz"
+  else if (mod n 5 == 0)
+    then "Buzz"
+  else if (mod n 3 == 0)
+    then "Fizz"
+  else
+    show n
+
 
 
 

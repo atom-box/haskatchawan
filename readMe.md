@@ -21,5 +21,6 @@ In these beginners lessons, "thinking functionally" is just GNU/BASh tools and p
 1. The free, full sized book [Learn You a Haskell](http://learnyouahaskell.com/) with awesome illustrations
 2. Instructions for sandboxed [installation](https://tech.fpcomplete.com/haskell/tutorial/stack-play) using Stacker
 3. 	Chris Allen's [Resource List](https://github.com/bitemyapp/learnhaskell)
+4. Hundreds of unannotated [examples](https://www.schoolofhaskell.com/school/to-infinity-and-beyond/pick-of-the-week/Simple%20examples).  Wide-ranging.
 
 

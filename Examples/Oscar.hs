@@ -8,6 +8,7 @@ module Examples.Oscar
 , x2y
 , flipper
 , countHi
+, plurify
 ) where
 
 {-
@@ -52,6 +53,11 @@ countHi (x:[]) = 0
 countHi (x:xs) | x == 'h' && (head xs) == 'i' = 1 + countHi xs
                | otherwise                    = 0 + countHi xs
 
+-- Add S's to everything
+plurify [] = []
+plurify (x:[]) = [x]++ "'s"
+plurify (x:xs) = (x:xs) ++ "s"
+-- Change to Latinx
 
 
 

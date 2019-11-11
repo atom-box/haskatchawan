@@ -1,5 +1,5 @@
 {-
-	I WROTE THIS
+  Calls three modules
 -}
 
 import Examples.Felix
@@ -48,16 +48,10 @@ main = do
   let friend = "While shiny hindsighted ships plough the Ohio."
   print $ friend
   print $ countHi $ friend
-
-
-  -- print(countHi("hiabc h i ho")) -- 1
-  -- print(countHi("ABChi shishi")) -- 3
-  -- print(countHi("ihihhhhhhhiiiiihia")) -- 3
-
+  putStrLn "------Make everything plural:"
+  let tennouns = ["kitchen","Detroit","A","mother","net","party","Baltimore","O","sale"]
+  print $ map plurify tennouns
+  -- print $ plurify tennouns
 
 
 
-{-
-http://learnyouahaskell.com/modules
-https://codingbat.com
--}

@@ -1,11 +1,12 @@
 {-
-I WROTE THIS CODE.
+All recursive functions
 -}
 
-module Experiment.Oscar  
+module Examples.Oscar  
 ( fibonacci
 , bunnyEars 
 , x2y
+, flipper
 ) where
 
 {-
@@ -30,3 +31,23 @@ bunnyEars b = 2 + bunnyEars (b - 1)
 Given a string, compute recursively (no loops) a new string where all the lowercase 'x' chars have been changed to 'y' chars.
 -}
 x2y str = [if x == 'x' then 'y' else x | x <- str ]
+
+
+{-
+Detect the presence of "hi" at the start of a String
+-}
+lookForHi (x:y:xs) = if x == 'h' && y == 'i' then True else False
+
+
+
+-- Recursively invert a list order
+flipper [] = []
+flipper (x:[]) = [x]  -- Notice! We return String not Char
+flipper (x:xs) = [last xs] ++ flipper ([x] ++ init xs)
+
+
+
+
+
+
+

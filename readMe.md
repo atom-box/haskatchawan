@@ -1,7 +1,7 @@
 # Coding Challenges in Haskell
 
 ## What's going on here:
-I am solving very short exercises in Haskell.  Most of my snippets are in the Examples folder.<br><br>
+I am solving very short exercises in Haskell.  The most recent snippets are in the [Examples](https://github.com/atom-box/haskatchawan/blob/master/Examples/Oscar.hs) folder.<br><br>
 Examples/Rhoda.hs code (runs from the Main.hs module)<br>
 ![screenshot of Rhoda Module code](https://github.com/atom-box/haskatchawan/blob/master/screenshots/rhoda-code.png)<br><br>
 Rhoda.hs running as a module of Main.hs<br>

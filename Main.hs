@@ -44,6 +44,10 @@ main = do
   let atHome = "Lambeau Field"
   print $ atHome
   print $ flipper $ atHome
+  putStrLn "------Count occurances of 'Hi':"
+  let friend = "While shiny hindsighted ships plough the Ohio."
+  print $ friend
+  print $ countHi $ friend
 
 
   -- print(countHi("hiabc h i ho")) -- 1

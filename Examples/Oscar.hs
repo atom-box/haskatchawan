@@ -7,6 +7,7 @@ module Examples.Oscar
 , bunnyEars 
 , x2y
 , flipper
+, countHi
 ) where
 
 {-
@@ -44,6 +45,12 @@ lookForHi (x:y:xs) = if x == 'h' && y == 'i' then True else False
 flipper [] = []
 flipper (x:[]) = [x]  -- Notice! We return String not Char
 flipper (x:xs) = [last xs] ++ flipper ([x] ++ init xs)
+
+-- Count occurances of 'H', 'i'
+countHi [] = 0
+countHi (x:[]) = 0
+countHi (x:xs) | x == 'h' && (head xs) == 'i' = 1 + countHi xs
+               | otherwise                    = 0 + countHi xs
 
 
 

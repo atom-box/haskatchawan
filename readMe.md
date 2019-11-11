@@ -10,7 +10,7 @@ Rhoda.hs running as a module of Main.hs<br>
 ## Reflection
  "Thinking functionally" is an extension of GNU/BASh tools and pipes.  In Haskell, dollar sign ($) is a pipe flowing from right to left and dot (.) is a pipe for just verbs.  <br><br>
 One upside: compared to JS, Haskell is more internally consistant with its own rules. In that respect, Haskell is like 11th grade Physics and Javascript is like 10th grade chemistry. <br><br>Compared to learning Elm language, the Haskell tutorials are less restricted to the DOM and web development so they unleash a lot of beauty.  For example, recursive programming is suddenly useful.<br><br>
-I can read type notation half of the time.  Crucially, Ioften cannot read it in the compiler error messages.  And can rarely write it.  One trick for writing it is to play around in GHCi and then let GHCi tell me the types, using (:t).
+I can read type notation half of the time.  Crucially, I often cannot read it in the compiler error messages.  And can rarely write it.  One trick for writing it is to play around in GHCi and then let GHCi tell me the types, using (:t).
 
 
 ## Resources

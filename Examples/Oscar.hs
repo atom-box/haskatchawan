@@ -10,6 +10,8 @@ module Examples.Oscar
 , countHi
 , plurify
 , modernize
+, roadify
+, fixID
 ) where
 
 {-
@@ -63,7 +65,21 @@ plurify (x:xs) = (x:xs) ++ "s"
 modernize str | str == "Mrs." || str == "Miss" = "Ms."
               | otherwise                      = str
 
+-- In a string, expand first occurance of Blvd Ln Rd St,,,,,,,
+roadify [] = []
+roadify s | (take 4 s) == "Blvd"  = "Boulevard" ++ (drop 4 s)
+          | otherwise             = [(head s)] ++ (roadify $ tail s)
 
 
 
+{-    CLOSE!  Is making infinite loop though.
 
+-- In a list of alphanumeric IDs, pad out the leading digits so all have 10
+fixID n = do
+  let pad s | ((length s) > 9) = s
+        | ((length s) < 10)   = "0" ++ (pad s)
+        | otherwise = "wreck"
+  let stringNumber = show n
+  pad stringNumber
+
+-}

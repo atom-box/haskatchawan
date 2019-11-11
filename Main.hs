@@ -23,8 +23,10 @@ main = do
   print(x2y slogan)
   print(length nouns)
   putStrLn "------Print lefthalf of any string:"
-  print(sinister "PET SHOP BOYS")
-  putStrLn "------Fizzbuzz:"
+  let musician = "PET SHOP BOYS"
+  print musician
+  print $ sinister $ musician
+  putStrLn "------Fizzbuzz for 33, 55, 60, 19:"
   print(fizzer 33)
   print(fizzer 55)
   print(fizzer 60)
@@ -51,9 +53,17 @@ main = do
   putStrLn "------Make everything plural:"
   let tennouns = ["kitchen","Detroit","A","mother","net","party","Baltimore","O","sale"]
   print $ map plurify tennouns
-  let people = ["Mr. Charlie-Tuna",  "Mrs.",  "Kennedy",  "Miss",  "Mary",  "Poppins",  "Mr. Oocyte"]
   putStrLn "------Update the honorifics:"
+  let people = ["Mr. Charlie-Tuna",  "Mrs.",  "Kennedy",  "Miss",  "Mary",  "Poppins",  "Mr. Oocyte"]
   print people
   print $ map modernize people
+  putStrLn "------UN-abbreviate Blvd:"
+  let place = "Farmers Blvd, Queens NY (second Blvd here)"
+  print place
+  print $ roadify place
+  putStrLn "------Pad out numbers w/ less than 10-digits:"
+  let phones = [8522535, 6082289493, 13, 4653958]
+  print phones
+  print $ map fixID phones
 
 

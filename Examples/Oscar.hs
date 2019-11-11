@@ -9,6 +9,7 @@ module Examples.Oscar
 , flipper
 , countHi
 , plurify
+, modernize
 ) where
 
 {-
@@ -57,8 +58,10 @@ countHi (x:xs) | x == 'h' && (head xs) == 'i' = 1 + countHi xs
 plurify [] = []
 plurify (x:[]) = [x]++ "'s"
 plurify (x:xs) = (x:xs) ++ "s"
--- Change to Latinx
 
+-- Edit women's honorifics for words as an array
+modernize str | str == "Mrs." || str == "Miss" = "Ms."
+              | otherwise                      = str
 
 
 

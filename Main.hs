@@ -51,7 +51,9 @@ main = do
   putStrLn "------Make everything plural:"
   let tennouns = ["kitchen","Detroit","A","mother","net","party","Baltimore","O","sale"]
   print $ map plurify tennouns
-  -- print $ plurify tennouns
-
+  let people = ["Mr. Charlie-Tuna",  "Mrs.",  "Kennedy",  "Miss",  "Mary",  "Poppins",  "Mr. Oocyte"]
+  putStrLn "------Update the honorifics:"
+  print people
+  print $ map modernize people
 
 

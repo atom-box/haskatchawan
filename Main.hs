@@ -52,6 +52,7 @@ main = do
   print $ countHi $ friend
   putStrLn "------Make everything plural:"
   let tennouns = ["kitchen","Detroit","A","mother","net","party","Baltimore","O","sale"]
+  print tennouns
   print $ map plurify tennouns
   putStrLn "------Update the honorifics:"
   let people = ["Mr. Charlie-Tuna",  "Mrs.",  "Kennedy",  "Miss",  "Mary",  "Poppins",  "Mr. Oocyte"]

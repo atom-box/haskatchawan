@@ -63,12 +63,19 @@ main = do
   print place
   print $ roadify place
   putStrLn "------Pad out numbers w/ less than 10-digits:"
-  let phones = [8522535, 6082289493, 13, 4653958]
+  let phones = ["8", "608228", "13", "465395"]
   print phones
-  print $ map fixID phones
+  print $ map addPadding phones
+  putStrLn "------2 digit year to 4 digit year:"
+  let born = ["04", "19", "20", "42", "13"]
+  print born
+  print $ map expandYear born  
   putStrLn "------Make a double by splitting a list at a position:"
   print atHome
   print $ cleave atHome 8
-
+  putStrLn "------Fix file names:"
+  let filenames = ["04MKE424242", "19LAX242", "20BAY9"]
+  print filenames
+  print $ map expandFileTag filenames
 
 

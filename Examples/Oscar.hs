@@ -11,8 +11,10 @@ module Examples.Oscar
 , plurify
 , modernize
 , roadify
-, fixID
+, addPadding
 , cleave
+, expandYear
+, expandFileTag
 ) where
 
 {-
@@ -74,25 +76,37 @@ roadify s | (take 4 s) == "Blvd"  = "Boulevard" ++ (drop 4 s)
 
 
 
--- In a list of alphanumeric IDs, pad out the leading digits so all have 10
-fixID n = do
-  let pad s | null s            = []
-            | ((length s) > 9)  = s
-            | ((length s) < 10) =  pad $ "0" ++ s
-            | otherwise = "wreck"
-  let stringNumber = show n
-  pad stringNumber
+-- In a list of alphanumeric IDs, pad out the leading digits so all have 6
+addPadding rawStr
+      | ((length rawStr) > finalSize)  =  "Input length exceeds final length"
+      | ((length rawStr) == finalSize)  = rawStr
+      | ((length rawStr) < finalSize) =  addPadding $ "0" ++ rawStr
+      | otherwise =  "AddPadding ended with no match."
+    where finalSize = 6
+
+-- Convert a 2 digit year to 4 digit year
+-- SYNTAX FOR CONVERTING STRING TO INTEGER in Haskell!
+expandYear d2 | d2Int <= currYr = "20" ++ d2
+              | d2Int >  currYr = "19" ++ d2
+  where currYr = 19
+        d2Int = (read d2 :: Int)
+
+-- long pattern match more readable than TAKE/DROP
+expandFileTag (a:b:c:d:e:xs) = left ++ middle ++ right 
+  where middle = [c] ++ [d] ++ [e]
+        left = expandYear ([a] ++ [b])
+        right = addPadding xs
 
 -- For a given list and position, split, return a pair of lists, split at the LOC position
 cleave list loc = (leftList , rightList)
   where leftList = take loc list
         rightList = drop loc list
 
-{-
-  if to the left, keeping recursively bringing a char
-  if at correct (position -1) return tail as other part of the tuple)
-  define all this in the (func , func ) format up top with where be
--}
-
-
 -- Expand the tags.
+{-
+Hi Michael, 
+
+
+I was reading about Let vs Where vs <-  in bindings this morning. It inspired me to rewrite better answers.  Functional code should look nice so other people can read it!  
+Here are my [cleaner implementations]() of the three Haskell questions you asked on Tuesday:
+-}

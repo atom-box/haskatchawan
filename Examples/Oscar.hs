@@ -102,11 +102,3 @@ cleave list loc = (leftList , rightList)
   where leftList = take loc list
         rightList = drop loc list
 
--- Expand the tags.
-{-
-Hi Michael, 
-
-
-I was reading about Let vs Where vs <-  in bindings this morning. It inspired me to rewrite better answers.  Functional code should look nice so other people can read it!  
-Here are my [cleaner implementations]() of the three Haskell questions you asked on Tuesday:
--}

@@ -66,5 +66,9 @@ main = do
   let phones = [8522535, 6082289493, 13, 4653958]
   print phones
   print $ map fixID phones
+  putStrLn "------Make a double by splitting a list at a position:"
+  print atHome
+  print $ cleave atHome 8
+
 
 

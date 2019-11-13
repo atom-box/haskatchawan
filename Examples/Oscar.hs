@@ -12,6 +12,7 @@ module Examples.Oscar
 , modernize
 , roadify
 , fixID
+, cleave
 ) where
 
 {-
@@ -82,3 +83,16 @@ fixID n = do
   let stringNumber = show n
   pad stringNumber
 
+-- For a given list and position, split, return a pair of lists, split at the LOC position
+cleave list loc = (leftList , rightList)
+  where leftList = take loc list
+        rightList = drop loc list
+
+{-
+  if to the left, keeping recursively bringing a char
+  if at correct (position -1) return tail as other part of the tuple)
+  define all this in the (func , func ) format up top with where be
+-}
+
+
+-- Expand the tags.

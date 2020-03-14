@@ -13,10 +13,10 @@ Compared to Javascript, Haskell is more internally consistant with its own rules
 I can read type notation half of the time.  Crucially, I often cannot read it in the compiler error messages.  And can rarely write it.  One trick for writing it is to play around in GHCi and then let GHCi tell me the types, using (:t).
 
 
-## Resources
-1. The free, full sized book [Learn You a Haskell](http://learnyouahaskell.com/) with awesome illustrations
-2. Instructions for sandboxed [installation](https://tech.fpcomplete.com/haskell/tutorial/stack-play) using Stacker
-3. 	Chris Allen's [Resource List](https://github.com/bitemyapp/learnhaskell)
-4. Hundreds of unannotated [examples](https://www.schoolofhaskell.com/school/to-infinity-and-beyond/pick-of-the-week/Simple%20examples).  Wide-ranging.
+## Resources (in recommended order)
+1. Before you play around, you will need to install some implementation of Haskell.  One very common way is shown in the instructions for sandboxed [installation](https://tech.fpcomplete.com/haskell/tutorial/stack-play) using Stacker.
+2. Orient yourself to the directions you can go next with Chris Allen's [Resource List](https://github.com/bitemyapp/learnhaskell) 
+3. Go from beginner to intermediate with the free, full sized book [Learn You a Haskell](http://learnyouahaskell.com/) with awesome illustrations
+4. As you code, keep checking the hundreds of unannotated [examples](https://www.schoolofhaskell.com/school/to-infinity-and-beyond/pick-of-the-week/Simple%20examples).  Wide-ranging.
 
 
